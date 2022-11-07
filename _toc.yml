@@ -1,0 +1,37 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+
+- caption: Installation Guides
+  chapters:
+    - file: platform_deployment.md
+    - file: components/publisher/install_guide.md
+
+- caption: User Guides
+  chapters:
+    - file: models/get_started.md
+    - file: components/rocket/user_guide.md
+    - file: components/jupyterhub/user_guide.md
+    - file: components/publisher/user_guide.md
+    - file: components/registry/user_guide.md
+    - file: components/crawler/user_guide.md
+
+- caption: Data Models
+  chapters:
+    - file: models/stac_model.md
+    - file: models/itag_model.md
+    - file: models/egg_model.md
+    - file: models/map_layers.md
+
+- caption: Developer Guides
+  chapters:
+    - file: architectural_design.md
+    - file: platform_components.md
+    - file: publisher_components.md
+
+- caption: References
+  chapters:
+    - file: bibliography.md
