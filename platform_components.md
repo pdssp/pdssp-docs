@@ -33,8 +33,8 @@
 - User interface:  {{ pdssp_crawler_link }}
 - Services end-points: N/A
 - Github repos:
-  - https://github.com/nmanaud/pdssp-crawler
-  - https://github.com/nmanaud/pdssp-stac-repo
+  - https://github.com/pdssp/pdssp-crawler
+  - https://github.com/pdssp/pdssp-stac-repo
 - Documentation: https://pdssp.github.io/pdssp-crawler {{ external_link }} 
 
 ## mapserver
