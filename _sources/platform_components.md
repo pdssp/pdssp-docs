@@ -35,8 +35,7 @@
 - Github repos:
   - https://github.com/nmanaud/pdssp-crawler
   - https://github.com/nmanaud/pdssp-stac-repo
-- API references:
-  - [Crawler Python API](crawler_api_ref)
+- Documentation: https://pdssp.github.io/pdssp-crawler {{ external_link }} 
 
 ## mapserver
 

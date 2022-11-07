@@ -367,20 +367,29 @@ title="Open an issue"
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  | <a href="#Y"><strong>Y</strong></a>
  
 </div>
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.AbstractExtractor">AbstractExtractor (class in crawler.extractor)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.AbstractRegistry">AbstractRegistry (class in crawler.registry)</a>
 </li>
-      <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.add_catalog">add_catalog() (crawler.registry.YAMLRegistry method)</a>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.AbstractTransformer">AbstractTransformer (class in crawler.transformer)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.add_collection">add_collection() (crawler.registry.YAMLRegistry method)</a>
+      <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.add_catalog">add_catalog() (crawler.registry.YAMLRegistry method)</a>
 </li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollections.add_collection">add_collection() (crawler.collection.SourceCollections method)</a>
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.add_collection">(crawler.registry.YAMLRegistry method)</a>
+</li>
+      </ul></li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.add_service">add_service() (crawler.registry.YAMLRegistry method)</a>
 </li>
   </ul></td>
@@ -399,6 +408,31 @@ title="Open an issue"
         <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.collections">(crawler.registry.YAMLRegistry attribute)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler">Crawler (class in crawler.crawler)</a>
+</li>
+      <li>
+    crawler.collection
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.collection">module</a>
+</li>
+      </ul></li>
+      <li>
+    crawler.crawler
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.crawler">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    crawler.extractor
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.extractor">module</a>
+</li>
+      </ul></li>
       <li>
     crawler.ingestor
 
@@ -406,8 +440,6 @@ title="Open an issue"
         <li><a href="components/crawler/crawler_api.html#module-crawler.ingestor">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     crawler.registry
 
@@ -420,6 +452,13 @@ title="Open an issue"
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#module-crawler.store">module</a>
+</li>
+      </ul></li>
+      <li>
+    crawler.transformer
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.transformer">module</a>
 </li>
       </ul></li>
   </ul></td>
@@ -444,15 +483,31 @@ title="Open an issue"
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.EPNTAP_Extractor">EPNTAP_Extractor (class in crawler.extractor)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.EPNTAP_STAC">EPNTAP_STAC (class in crawler.transformer)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.CatalogDefinition.extensions">extensions (crawler.registry.CatalogDefinition attribute)</a>
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.extensions">(crawler.registry.CollectionDefinition attribute)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.extract">extract() (crawler.collection.SourceCollection method)</a>
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#crawler.extractor.AbstractExtractor.extract">(crawler.extractor.AbstractExtractor method)</a>
+</li>
+        <li><a href="components/crawler/crawler_api.html#crawler.extractor.PDSODE_Extractor.extract">(crawler.extractor.PDSODE_Extractor method)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler.extract_collection">extract_collection() (crawler.crawler.Crawler method)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.store.SourceCollectionStatus.extracted">extracted (crawler.store.SourceCollectionStatus attribute)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.Extractor">Extractor() (in module crawler.extractor)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -484,27 +539,47 @@ title="Open an issue"
       </ul></li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.get_catalogs_ids">get_catalogs_ids() (crawler.registry.YAMLRegistry method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.AbstractRegistry.get_collection">get_collection() (crawler.registry.AbstractRegistry method)</a>
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.get_collection">(crawler.registry.YAMLRegistry method)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler.get_collection_definition">get_collection_definition() (crawler.crawler.Crawler method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler.get_collection_status">get_collection_status() (crawler.crawler.Crawler method)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.AbstractRegistry.get_collections">get_collections() (crawler.registry.AbstractRegistry method)</a>
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.get_collections">(crawler.registry.YAMLRegistry method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.AbstractRegistry.get_collections_ids">get_collections_ids() (crawler.registry.AbstractRegistry method)</a>
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.get_collections_ids">(crawler.registry.YAMLRegistry method)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.get_metadata">get_metadata() (crawler.collection.SourceCollection method)</a>
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceProduct.get_metadata">(crawler.collection.SourceProduct method)</a>
+</li>
+      </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.get_next_product">get_next_product() (crawler.collection.SourceCollection method)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.store.DataStore.get_source_collection">get_source_collection() (crawler.store.DataStore method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.get_source_schema">get_source_schema() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.get_stac_catalog_path">get_stac_catalog_path() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.get_stac_collection_url">get_stac_collection_url() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.PDSODE_STAC.get_stac_item_dict">get_stac_item_dict() (crawler.transformer.PDSODE_STAC method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -518,11 +593,21 @@ title="Open an issue"
         <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.id">(crawler.registry.CollectionDefinition attribute)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.ingest">ingest() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler.ingest_collection">ingest_collection() (crawler.crawler.Crawler method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.store.SourceCollectionStatus.ingested">ingested (crawler.store.SourceCollectionStatus attribute)</a>
 </li>
       <li><a href="components/crawler/crawler_api.html#crawler.ingestor.Ingestor">Ingestor (class in crawler.ingestor)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.is_extracted">is_extracted() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.is_ingested">is_ingested() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.is_transformed">is_transformed() (crawler.collection.SourceCollection method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -542,17 +627,27 @@ title="Open an issue"
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.MARSSI_STAC">MARSSI_STAC (class in crawler.transformer)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.SourceDefinition.metadata_schema">metadata_schema (crawler.registry.SourceDefinition attribute)</a>
 </li>
       <li>
     module
 
       <ul>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.collection">crawler.collection</a>
+</li>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.crawler">crawler.crawler</a>
+</li>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.extractor">crawler.extractor</a>
+</li>
         <li><a href="components/crawler/crawler_api.html#module-crawler.ingestor">crawler.ingestor</a>
 </li>
         <li><a href="components/crawler/crawler_api.html#module-crawler.registry">crawler.registry</a>
 </li>
         <li><a href="components/crawler/crawler_api.html#module-crawler.store">crawler.store</a>
+</li>
+        <li><a href="components/crawler/crawler_api.html#module-crawler.transformer">crawler.transformer</a>
 </li>
       </ul></li>
   </ul></td>
@@ -565,26 +660,32 @@ title="Open an issue"
 </li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.parse_yaml_catalog_file">parse_yaml_catalog_file() (crawler.registry.YAMLRegistry method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.YAMLRegistry.parse_yaml_collection_file">parse_yaml_collection_file() (crawler.registry.YAMLRegistry method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.CatalogDefinition.path">path (crawler.registry.CatalogDefinition attribute)</a>
 
       <ul>
         <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.path">(crawler.registry.CollectionDefinition attribute)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.PDSODE_Extractor">PDSODE_Extractor (class in crawler.extractor)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.PDSODE_STAC">PDSODE_STAC (class in crawler.transformer)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="components/crawler/crawler_api.html#crawler.registry.Registry">Registry() (in module crawler.registry)</a>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.PDSODE_Extractor.read_next">read_next() (crawler.extractor.PDSODE_Extractor method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.registry.Registry">Registry() (in module crawler.registry)</a>
+</li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.RESTOAPIRegistry">RESTOAPIRegistry (class in crawler.registry)</a>
 </li>
   </ul></td>
@@ -595,9 +696,15 @@ title="Open an issue"
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.SourceDefinition.service">service (crawler.registry.SourceDefinition attribute)</a>
 </li>
+      <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.source">source (crawler.registry.CollectionDefinition attribute)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.source">source (crawler.registry.CollectionDefinition attribute)</a>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection">SourceCollection (class in crawler.collection)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollections">SourceCollections (class in crawler.collection)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceProduct">SourceProduct (class in crawler.collection)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -611,9 +718,25 @@ title="Open an issue"
         <li><a href="components/crawler/crawler_api.html#crawler.registry.CollectionDefinition.title">(crawler.registry.CollectionDefinition attribute)</a>
 </li>
       </ul></li>
+      <li><a href="components/crawler/crawler_api.html#crawler.collection.SourceCollection.transform">transform() (crawler.collection.SourceCollection method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.crawler.Crawler.transform_collection">transform_collection() (crawler.crawler.Crawler method)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.AbstractTransformer.transform_source_file">transform_source_file() (crawler.transformer.AbstractTransformer method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.AbstractTransformer.transform_source_metadata">transform_source_metadata() (crawler.transformer.AbstractTransformer method)</a>
+
+      <ul>
+        <li><a href="components/crawler/crawler_api.html#crawler.transformer.PDSODE_STAC.transform_source_metadata">(crawler.transformer.PDSODE_STAC method)</a>
+</li>
+      </ul></li>
       <li><a href="components/crawler/crawler_api.html#crawler.store.SourceCollectionStatus.transformed">transformed (crawler.store.SourceCollectionStatus attribute)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.Transformer">Transformer() (in module crawler.transformer)</a>
+</li>
+      <li><a href="components/crawler/crawler_api.html#crawler.transformer.TransformerSchemaInputError">TransformerSchemaInputError</a>
 </li>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.ServiceDefinition.type">type (crawler.registry.ServiceDefinition attribute)</a>
 </li>
@@ -624,6 +747,14 @@ title="Open an issue"
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="components/crawler/crawler_api.html#crawler.registry.ServiceDefinition.url">url (crawler.registry.ServiceDefinition attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="components/crawler/crawler_api.html#crawler.extractor.WFS_Extractor">WFS_Extractor (class in crawler.extractor)</a>
 </li>
   </ul></td>
 </tr></table>

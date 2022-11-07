@@ -395,7 +395,7 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crawler-module">
+  <a class="reference internal nav-link" href="#module-crawler.crawler">
    <code class="docutils literal notranslate">
     <span class="pre">
      crawler
@@ -425,7 +425,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collection-module">
+  <a class="reference internal nav-link" href="#module-crawler.collection">
    <code class="docutils literal notranslate">
     <span class="pre">
      collection
@@ -435,7 +435,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#extractor-module">
+  <a class="reference internal nav-link" href="#module-crawler.extractor">
    <code class="docutils literal notranslate">
     <span class="pre">
      extractor
@@ -445,7 +445,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#transformer-module">
+  <a class="reference internal nav-link" href="#module-crawler.transformer">
    <code class="docutils literal notranslate">
     <span class="pre">
      transformer
@@ -484,7 +484,7 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crawler-module">
+  <a class="reference internal nav-link" href="#module-crawler.crawler">
    <code class="docutils literal notranslate">
     <span class="pre">
      crawler
@@ -514,7 +514,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collection-module">
+  <a class="reference internal nav-link" href="#module-crawler.collection">
    <code class="docutils literal notranslate">
     <span class="pre">
      collection
@@ -524,7 +524,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#extractor-module">
+  <a class="reference internal nav-link" href="#module-crawler.extractor">
    <code class="docutils literal notranslate">
     <span class="pre">
      extractor
@@ -534,7 +534,7 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#transformer-module">
+  <a class="reference internal nav-link" href="#module-crawler.transformer">
    <code class="docutils literal notranslate">
     <span class="pre">
      transformer
@@ -565,8 +565,46 @@ title="Print to PDF"
                 
   <section id="crawler-api">
 <span id="crawler-api-ref"></span><h1>Crawler API<a class="headerlink" href="#crawler-api" title="Permalink to this headline">#</a></h1>
-<section id="crawler-module">
-<h2><code class="docutils literal notranslate"><span class="pre">crawler</span></code> module<a class="headerlink" href="#crawler-module" title="Permalink to this headline">#</a></h2>
+<section id="module-crawler.crawler">
+<span id="crawler-module"></span><h2><code class="docutils literal notranslate"><span class="pre">crawler</span></code> module<a class="headerlink" href="#module-crawler.crawler" title="Permalink to this headline">#</a></h2>
+<p>Crawler module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.crawler.</span></span><span class="sig-name descname"><span class="pre">Crawler</span></span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Crawler class acting as main controller.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler.extract_collection">
+<span class="sig-name descname"><span class="pre">extract_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler.extract_collection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler.extract_collection" title="Permalink to this definition">#</a></dt>
+<dd><p>Extract source collection file(s) from the “data catalog” service associated to a given collection identifier.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler.get_collection_definition">
+<span class="sig-name descname"><span class="pre">get_collection_definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#crawler.registry.CollectionDefinition" title="crawler.registry.CollectionDefinition"><span class="pre">crawler.registry.CollectionDefinition</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler.get_collection_definition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler.get_collection_definition" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the definition of a source collection, given its identifier.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler.get_collection_status">
+<span class="sig-name descname"><span class="pre">get_collection_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#crawler.store.SourceCollectionStatus" title="crawler.store.SourceCollectionStatus"><span class="pre">crawler.store.SourceCollectionStatus</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler.get_collection_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler.get_collection_status" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns the processing status of a source collection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler.ingest_collection">
+<span class="sig-name descname"><span class="pre">ingest_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler.ingest_collection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler.ingest_collection" title="Permalink to this definition">#</a></dt>
+<dd><p>Ingestion a collection into the destination STAC catalog service.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.crawler.Crawler.transform_collection">
+<span class="sig-name descname"><span class="pre">transform_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/crawler.html#Crawler.transform_collection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.crawler.Crawler.transform_collection" title="Permalink to this definition">#</a></dt>
+<dd><p>Transform a single source collection into a STAC collection file.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-crawler.registry">
 <span id="registry-module"></span><h2><code class="docutils literal notranslate"><span class="pre">registry</span></code> module<a class="headerlink" href="#module-crawler.registry" title="Permalink to this headline">#</a></h2>
@@ -1100,7 +1138,7 @@ title="Print to PDF"
 <p>PDSSP Crawler data store module.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="crawler.store.DataStore">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.store.</span></span><span class="sig-name descname"><span class="pre">DataStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Users/nmanaud/workspace/pdssp/pdssp-crawler-data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stac_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Users/nmanaud/workspace/pdssp/pdssp-stac-repo'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/store.html#DataStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.store.DataStore" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.store.</span></span><span class="sig-name descname"><span class="pre">DataStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Users/nmanaud/workspace/pdssp/crawler-data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stac_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/Users/nmanaud/workspace/pdssp/pdssp-stac-repo'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/store.html#DataStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.store.DataStore" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>DataStore class.</p>
 <dl class="py method">
@@ -1178,14 +1216,211 @@ title="Print to PDF"
 </dd></dl>
 
 </section>
-<section id="collection-module">
-<h2><code class="docutils literal notranslate"><span class="pre">collection</span></code> module<a class="headerlink" href="#collection-module" title="Permalink to this headline">#</a></h2>
+<section id="module-crawler.collection">
+<span id="collection-module"></span><h2><code class="docutils literal notranslate"><span class="pre">collection</span></code> module<a class="headerlink" href="#module-crawler.collection" title="Permalink to this headline">#</a></h2>
+<p>PDSSP Crawler collection module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.collection.</span></span><span class="sig-name descname"><span class="pre">SourceCollection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collec_def</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SourceCollection class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.extract">
+<span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.extract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.extract" title="Permalink to this definition">#</a></dt>
+<dd><p>Extract.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.get_metadata">
+<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.get_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.get_metadata" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.get_next_product">
+<span class="sig-name descname"><span class="pre">get_next_product</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.get_next_product"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.get_next_product" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.get_source_schema">
+<span class="sig-name descname"><span class="pre">get_source_schema</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.get_source_schema"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.get_source_schema" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.get_stac_catalog_path">
+<span class="sig-name descname"><span class="pre">get_stac_catalog_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.get_stac_catalog_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.get_stac_catalog_path" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.get_stac_collection_url">
+<span class="sig-name descname"><span class="pre">get_stac_collection_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.get_stac_collection_url"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.get_stac_collection_url" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.ingest">
+<span class="sig-name descname"><span class="pre">ingest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst_stac_server_url</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.ingest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.ingest" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.is_extracted">
+<span class="sig-name descname"><span class="pre">is_extracted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.is_extracted"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.is_extracted" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.is_ingested">
+<span class="sig-name descname"><span class="pre">is_ingested</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.is_ingested"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.is_ingested" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.is_transformed">
+<span class="sig-name descname"><span class="pre">is_transformed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.is_transformed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.is_transformed" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollection.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollection.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollection.transform" title="Permalink to this definition">#</a></dt>
+<dd><p>Transform.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollections">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.collection.</span></span><span class="sig-name descname"><span class="pre">SourceCollections</span></span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollections" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SourceCollections class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceCollections.add_collection">
+<span class="sig-name descname"><span class="pre">add_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_collection</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceCollections.add_collection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceCollections.add_collection" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.collection.SourceProduct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.collection.</span></span><span class="sig-name descname"><span class="pre">SourceProduct</span></span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceProduct"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceProduct" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SourceProduct class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.collection.SourceProduct.get_metadata">
+<span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/collection.html#SourceProduct.get_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.collection.SourceProduct.get_metadata" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="extractor-module">
-<h2><code class="docutils literal notranslate"><span class="pre">extractor</span></code> module<a class="headerlink" href="#extractor-module" title="Permalink to this headline">#</a></h2>
+<section id="module-crawler.extractor">
+<span id="extractor-module"></span><h2><code class="docutils literal notranslate"><span class="pre">extractor</span></code> module<a class="headerlink" href="#module-crawler.extractor" title="Permalink to this headline">#</a></h2>
+<p>PDSSP Crawler extractor module (extract and read).</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.extractor.AbstractExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.extractor.</span></span><span class="sig-name descname"><span class="pre">AbstractExtractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_definition</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#AbstractExtractor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.AbstractExtractor" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Abstract Extractor class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.extractor.AbstractExtractor.extract">
+<span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#AbstractExtractor.extract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.AbstractExtractor.extract" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.extractor.EPNTAP_Extractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.extractor.</span></span><span class="sig-name descname"><span class="pre">EPNTAP_Extractor</span></span><a class="reference internal" href="../../_modules/crawler/extractor.html#EPNTAP_Extractor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.EPNTAP_Extractor" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.extractor.AbstractExtractor" title="crawler.extractor.AbstractExtractor"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.extractor.AbstractExtractor</span></code></a></p>
+<p>EPNTAP_Extractor class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="crawler.extractor.Extractor">
+<span class="sig-prename descclassname"><span class="pre">crawler.extractor.</span></span><span class="sig-name descname"><span class="pre">Extractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_definition</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#Extractor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.Extractor" title="Permalink to this definition">#</a></dt>
+<dd><p>Extractor function serving as Extractor objects factory.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.extractor.PDSODE_Extractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.extractor.</span></span><span class="sig-name descname"><span class="pre">PDSODE_Extractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_definition</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#PDSODE_Extractor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.PDSODE_Extractor" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.extractor.AbstractExtractor" title="crawler.extractor.AbstractExtractor"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.extractor.AbstractExtractor</span></code></a></p>
+<p>PDSODE_Extractor class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.extractor.PDSODE_Extractor.extract">
+<span class="sig-name descname"><span class="pre">extract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#PDSODE_Extractor.extract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.PDSODE_Extractor.extract" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.extractor.PDSODE_Extractor.read_next">
+<span class="sig-name descname"><span class="pre">read_next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/extractor.html#PDSODE_Extractor.read_next"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.PDSODE_Extractor.read_next" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.extractor.WFS_Extractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.extractor.</span></span><span class="sig-name descname"><span class="pre">WFS_Extractor</span></span><a class="reference internal" href="../../_modules/crawler/extractor.html#WFS_Extractor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.extractor.WFS_Extractor" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.extractor.AbstractExtractor" title="crawler.extractor.AbstractExtractor"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.extractor.AbstractExtractor</span></code></a></p>
+<p>WFS_Extractor class.</p>
+</dd></dl>
+
 </section>
-<section id="transformer-module">
-<h2><code class="docutils literal notranslate"><span class="pre">transformer</span></code> module<a class="headerlink" href="#transformer-module" title="Permalink to this headline">#</a></h2>
+<section id="module-crawler.transformer">
+<span id="transformer-module"></span><h2><code class="docutils literal notranslate"><span class="pre">transformer</span></code> module<a class="headerlink" href="#module-crawler.transformer" title="Permalink to this headline">#</a></h2>
+<p>Transformator module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.transformer.AbstractTransformer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">AbstractTransformer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PDSSP_STAC'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#AbstractTransformer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.AbstractTransformer" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.transformer.AbstractTransformer.transform_source_file">
+<span class="sig-name descname"><span class="pre">transform_source_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../../_modules/crawler/transformer.html#AbstractTransformer.transform_source_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.AbstractTransformer.transform_source_file" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.transformer.AbstractTransformer.transform_source_metadata">
+<span class="sig-name descname"><span class="pre">transform_source_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pydantic.main.BaseModel</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pydantic.main.BaseModel</span></span></span><a class="reference internal" href="../../_modules/crawler/transformer.html#AbstractTransformer.transform_source_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.AbstractTransformer.transform_source_metadata" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.transformer.EPNTAP_STAC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">EPNTAP_STAC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PDSSP_STAC'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#EPNTAP_STAC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.EPNTAP_STAC" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.transformer.AbstractTransformer" title="crawler.transformer.AbstractTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.transformer.AbstractTransformer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.transformer.MARSSI_STAC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">MARSSI_STAC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PDSSP_STAC'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#MARSSI_STAC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.MARSSI_STAC" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.transformer.AbstractTransformer" title="crawler.transformer.AbstractTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.transformer.AbstractTransformer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crawler.transformer.PDSODE_STAC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">PDSODE_STAC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PDSSP_STAC'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#PDSODE_STAC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.PDSODE_STAC" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#crawler.transformer.AbstractTransformer" title="crawler.transformer.AbstractTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">crawler.transformer.AbstractTransformer</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.transformer.PDSODE_STAC.get_stac_item_dict">
+<span class="sig-name descname"><span class="pre">get_stac_item_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_metadata</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#PDSODE_STAC.get_stac_item_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.PDSODE_STAC.get_stac_item_dict" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crawler.transformer.PDSODE_STAC.transform_source_metadata">
+<span class="sig-name descname"><span class="pre">transform_source_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pydantic.main.BaseModel</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pydantic.main.BaseModel</span></span></span><a class="reference internal" href="../../_modules/crawler/transformer.html#PDSODE_STAC.transform_source_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.PDSODE_STAC.transform_source_metadata" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="crawler.transformer.Transformer">
+<span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">Transformer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_schema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PDSSP_STAC'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/crawler/transformer.html#Transformer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.Transformer" title="Permalink to this definition">#</a></dt>
+<dd><p>Transformer function serving as Transformer objects factory.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="crawler.transformer.TransformerSchemaInputError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">crawler.transformer.</span></span><span class="sig-name descname"><span class="pre">TransformerSchemaInputError</span></span><a class="reference internal" href="../../_modules/crawler/transformer.html#TransformerSchemaInputError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crawler.transformer.TransformerSchemaInputError" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Custom error that is raised when invalid schema name is passed.</p>
+</dd></dl>
+
 </section>
 <section id="module-crawler.ingestor">
 <span id="ingestor-module"></span><h2><code class="docutils literal notranslate"><span class="pre">ingestor</span></code> module<a class="headerlink" href="#module-crawler.ingestor" title="Permalink to this headline">#</a></h2>
