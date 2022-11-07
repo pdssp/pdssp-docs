@@ -7,5 +7,5 @@ User interface link: {{ pdssp_registry_link }}
 - Register/update services and collections
 
 Current YAML registry:
-- data: https://github.com/nmanaud/pdssp-crawler/tree/main/data/registry
-- model: https://github.com/nmanaud/pdssp-crawler/tree/main/data/schema/registry (not available yet)
+- data: https://github.com/pdssp/pdssp-crawler/tree/main/data/registry
+- model: https://github.com/pdssp/pdssp-crawler/tree/main/data/schema/registry (not available yet)

@@ -11,3 +11,4 @@ User interface link: {{ pdssp_crawler_link }}
   - PDSSP WFS collection
   - STAC collection
 
+See [PDSSP Crawler Documentation](https://pdssp.github.io/pdssp-crawler) {{ external_link }}
