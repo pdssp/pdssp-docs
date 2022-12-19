@@ -1,3 +1,6 @@
+```{warning} PDSSP Platform is under development. 
+```
+
 # PDSSP Documentation
 
 This is the central hub documentation for the "Pôle de Données et Services Surfaces Planétaires" (PDSSP) platform, linking to other pieces of documentation and resources useful to all stakeholders of the project.
