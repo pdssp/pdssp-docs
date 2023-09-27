@@ -27,7 +27,7 @@
     - Lunaserv
         - [http://webmap.lroc.asu.edu/lunaserv.html](http://webmap.lroc.asu.edu/lunaserv.html)
         - [http://webmap.lroc.asu.edu/](http://webmap.lroc.asu.edu/)
-    - PSUS Mars WMS
+    - PSUP Mars WMS
       - [http://idoc-wmsmars.ias.u-psud.fr/wmsmap](http://idoc-wmsmars.ias.u-psud.fr/wmsmap?)
 - Internal (PDSSP)
     - IAS/IDOC
