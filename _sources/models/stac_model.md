@@ -52,5 +52,5 @@ For example:
 
 STAC collection/item metadata
 
-```{note} Inventory of [PDSSP Data Models](https://docs.google.com/spreadsheets/d/1J6lHIhK6-9XbbXCcSwLqDamKwiOldqfQoEnucz6lx1M/edit?usp=sharing) (Google Sheet){{ external_link }}.
+```{note} Inventory of [PDSSP Data Models](https://docs.google.com/spreadsheets/d/1pLIS8iGU0IQ_LmgxtztdFTnT6D5L6-pk3-PKZdAYdWM/edit?usp=sharing) (Google Sheet){{ external_link }}.
 ```
